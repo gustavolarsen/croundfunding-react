@@ -45,7 +45,7 @@ const RewardsList = () => {
               <span>
                 <span className={styles.left}>{reward.left}</span> left
               </span>
-              <Button title={`Select Reward`} disabled={reward.left === 0} />
+              <Button title={`Select reward`} disabled={reward.left === 0} />
             </div>
           </div>
         );
