@@ -1,0 +1,17 @@
+@import url('./colors.module.scss');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 3rem;
+  max-width: 720px;
+}
+
+.wrapper section {
+  padding: 4rem;
+  background-color: var(--color-white);
+  border-radius: 1.6rem;
+  border: 1px solid var(--color-medium-gray);
+  width: 100%;
+}

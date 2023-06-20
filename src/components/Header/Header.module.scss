@@ -1,0 +1,30 @@
+@import url('../../styles/colors.module.scss');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40rem;
+  background: url(image-hero-desktop.jpg) no-repeat center;
+  padding: 6rem 16rem;
+
+  img {
+    width: 12.8rem;
+    height: 2rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.4rem;
+
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-moderate-cyan);
+      }
+    }
+  }
+}

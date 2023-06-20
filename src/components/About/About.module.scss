@@ -1,0 +1,56 @@
+@import url('../../styles/colors.module.scss');
+
+.about {
+  h2 {
+    color: var(--color-black);
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .rewards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .rewardsCard {
+      border: 1px solid var(--color-medium-gray);
+      border-radius: 0.8rem;
+      padding: 3rem;
+
+      .cardHeader {
+        display: flex;
+        justify-content: space-between;
+
+        .pledge {
+          color: var(--color-moderate-cyan);
+          font-weight: 500;
+        }
+      }
+
+      .cardFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+          color: var(--color-black);
+          font-size: 3rem;
+          font-weight: 700;
+          margin: 1rem;
+        }
+      }
+
+      &.disabled {
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+        -moz-opacity: 0.5;
+        -webkit-opacity: 0.5;
+      }
+    }
+  }
+}

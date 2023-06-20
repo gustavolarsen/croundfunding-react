@@ -1,0 +1,21 @@
+@import url('./styles/colors.module.scss');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+  background-color: var(--color-light-gray);
+  margin: auto;
+  max-width: 1440px;
+}
