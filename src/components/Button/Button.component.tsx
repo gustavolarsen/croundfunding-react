@@ -1,3 +1,4 @@
+import { useModal } from '../../hooks/useModal';
 import styles from './Button.module.scss';
 
 interface Props {
@@ -6,13 +7,12 @@ interface Props {
 }
 
 const Button = ({ title, disabled }: Props) => {
+  const { toggleModal } = useModal();
   return (
     <button
       className={`${styles.primary} ${disabled && styles.disabled}`}
       disabled={disabled}
-      onClick={() => {
-        alert('click button');
-      }}
+      onClick={toggleModal}
     >
       {disabled ? `Out of stock` : title}
     </button>
